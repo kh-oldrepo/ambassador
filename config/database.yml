@@ -1,0 +1,11 @@
+development: &development
+ adapter: mysql2
+ enconding: utf8
+ host: localhost
+ database: rails_example
+ username: rails_example
+ password: rails.example!
+
+test:
+ <<: *development
+ database: rails_example_test

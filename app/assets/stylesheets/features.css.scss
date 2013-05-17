@@ -1,0 +1,41 @@
+#content.features{
+
+  width: 100%;
+
+  .centered-content{
+    @include content;
+  }
+}
+
+
+
+
+#about1 {
+  padding-top: 40px;
+  height: 300px;
+  @include background-image(linear-gradient(white, #e0dddd));
+  @include box-shadow(0 -4px 9px -6px $shadow_grey inset);
+  position: relative;
+  z-index: 4;
+  margin-top:20px;
+  .well {
+    width:100px;
+  }
+}
+
+#about2 {
+  background-color: $ambassador_green;
+  height: 300px;
+  @include bottom_shadow;
+  position: relative;
+  z-index: 3;
+}
+
+#about3 {
+  background-color: #FF9200;
+  height: 300px;
+  @include bottom_shadow;
+  position: relative;
+  z-index: 2;
+}
+

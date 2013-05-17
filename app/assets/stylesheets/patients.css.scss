@@ -1,0 +1,29 @@
+#content.patients{
+
+  width: 100%;
+
+  .centered-content{
+    @include content;
+  }
+}
+
+#content.patients {
+  textarea {
+    width: 500px;
+    height: 200px;
+  }
+  p.data {
+    width: 300px;
+    display: inline-block;
+  }
+  .well {
+    width: 700px;
+  }
+  #notes {
+    padding-bottom: 20px;
+  }
+
+  th {
+    padding-right:15px;
+  }
+}

@@ -1,0 +1,98 @@
+#content.home{
+
+  width: 100%;
+
+  .centered-content{
+    @include content;
+  }
+}
+
+.large {
+  width: 29%;
+  height: 350px;
+  float: right;
+  margin-left:10px;
+  padding-top:5px;
+}
+
+#welcome{
+  @include background-image(linear-gradient(white, #e0dddd));
+  height: 300px;
+  @include box-shadow(0 -4px 9px -6px $shadow_grey inset);
+  position: relative;
+  z-index: 4;
+  margin-top:20px;
+}
+
+#details {
+  background-color: $ambassador_green;
+  height: 200px;
+  @include bottom_shadow;
+  position: relative;
+  z-index: 3;
+}
+
+#about {
+  > #content {
+    padding-top: 300px0px;
+  }
+
+  background-color: white;
+  height: 450px;
+  @include bottom_shadow;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome-image {
+  width: 744px;
+  height: 289px;
+  display: block;
+  margin:  auto;
+  padding-top: 30px;
+}
+.details {
+  margin: 0 auto;
+}
+
+#third-container {
+  color:white;
+  font-size:14px;
+  text-align: center;
+  width:30%;
+  > h2 {
+    text-align: center;
+    text-shadow:0.1em 0.1em #333;
+    color: white;
+    font-size:18px;
+  }
+  height: 150px;
+  padding-left:10px;
+  padding-right:10px;
+  float: left;
+}
+
+#third-container-black {
+  color:black;
+  font-size:14px;
+  text-align: left;
+  width:27%;
+
+  > h2 {
+    text-align: left;
+
+    color: $ambassador_green;
+    font-size:18px;
+  }
+  height: 150px;
+  padding-left:0px;
+  padding-right:10px;
+  float: left;
+
+  position:relative;
+}
+
+#half {
+  width: 600px;
+  float:left;
+}

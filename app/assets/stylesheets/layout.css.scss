@@ -1,0 +1,76 @@
+@mixin content {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.navbar-fixed-top .container, .navbar-fixed-bottom .container {
+width: 95%;
+}
+
+h2 {
+  font-size: 18px;
+  color: $ambassador_green;
+
+}
+
+#header{
+  font-family: Ubuntu, sans-serif;
+  position: fixed;
+}
+
+#content {
+  padding-top:30px;
+  @include content;
+  font-family: "Open Sans", sans-serif;
+}
+
+#footer {
+
+  > #content {
+      padding-top: 0px;
+  }
+  background-color: $light-grey;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  z-index: 0;
+  padding-top:10px;
+  padding-left: 15px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+
+}
+
+.navbar .nav > li > a {
+  padding: 18px 0px 0px 40px;
+  text-shadow: none;
+  @include single-transition( color 0.5s);
+  font-size: 19px;
+  font-family:Ubuntu;
+  &:hover {color: $ambassador_green}
+}
+
+
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+
+}
+
+.navbar-inner {
+  @include background-image(linear-gradient(white, #f1f1f1));
+  @include bottom_shadow;
+  text-shadow: none;
+  position: relative;
+  z-index: 5;
+ }
+
+ .logo{
+  height: 40px;
+  width: 40px;
+  padding-top: 2px;
+ }
+
+
